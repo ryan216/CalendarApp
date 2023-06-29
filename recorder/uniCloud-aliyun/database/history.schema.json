@@ -1,0 +1,87 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [
+		
+		
+	],
+	"permission": {
+		"read": "true",
+		"create": "auth.uid != null",
+		"update": "doc.user_id == auth.uid || 'webmaster' in auth.role",
+		"delete": "doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（用户 ID），系统自动生成"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "文章作者ID， 参考`uni-id-users` 表",
+			"foreignKey": "uni-id-users._id",
+			"defaultValue": {
+				"$env": "uid"
+			}
+		},
+		"theme": {
+			"bsonType": "string",
+			"title": "标题",
+			"description": "标题",
+			"label": "标题",
+			"trim": "both"
+		},
+    "content": {
+    	"bsonType": "string",
+    	"title": "作者",
+    	"description": "作者",
+    	"label": "作者",
+    	"trim": "both"
+    },
+    "price": {
+    	"bsonType": "string",
+    	"title": "样式",
+    	"description": "样式",
+    	"label": "样式",
+    	"trim": "both"
+    },
+    "createAt": {
+    	"bsonType": "string",
+    	"title": "解析",
+    	"description": "解析",
+    	"label": "解析",
+    	"trim": "both"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+    "time": {
+    	"bsonType": "timestamp",
+    	"title": "发表时间",
+    	"description": "发表时间",
+    	"defaultValue": {
+    		"$env": "now"
+    	}
+    }
+		
+		
+		
+		
+		
+		
+		
+	
+	
+
+		
+	},
+	"version": "0.0.1"
+}

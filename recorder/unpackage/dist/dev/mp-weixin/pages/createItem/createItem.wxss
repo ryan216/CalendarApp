@@ -1,0 +1,64 @@
+
+.back {
+	margin: 40rpx 0;
+}
+.back-btn {
+	box-sizing: border-box;
+	border: 4rpx solid #999;
+	border-radius: 40rpx;
+	color: #999;
+	font-size: 24rpx;
+	padding: 8rpx 40rpx;
+	margin: 20rpx 32rpx 0 32rpx;
+}
+.date {
+	font-size: 48rpx;
+	font-weight: 500;
+	margin: 0 auto;
+	padding: 20rpx;
+	text-align: center;
+	background: #eee;
+}
+.btn-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 40rpx 0;
+}
+.btn {
+	border: 4rpx solid #777;
+	padding: 16rpx 96rpx;
+	display: inline-block;
+	border-radius: 40rpx;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.item-list {
+	padding: 32rpx;
+	box-sizing: border-box;
+	position: relative;
+}
+.item {
+	border: 4rpx solid #999;
+	border-radius: 16rpx;
+	padding: 20rpx;
+	box-sizing: border-box;
+	margin-bottom: 20rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.item .header {
+	flex: 1;
+	font-size: 24rpx;
+	color: #86909c;
+}
+.item .header .theme {
+	font-size: 32rpx;
+	color: #272e3b;
+}
+.item .footer {
+	min-width: 100rpx;
+	color: #F53F3F;
+}
+

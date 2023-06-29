@@ -1,0 +1,7 @@
+{
+  "name": "item-info-co",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
